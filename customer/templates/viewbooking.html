@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+{% block content %}
+
+<div class="container ">
+  <div class="main-head text-center ">
+
+    <h1 class="pt-4 fw-bold text-warning">Booking details
+    </h1>
+  </div>
+  <div class="main-books">
+    {% for p in book %}
+    <div class="card" style="width: 18rem; height: 20rem;">
+
+      <div class="card-body pt-3">
+        <h4 class="card-title pt-2"><span class="text-success">Name: </span>{{p.name}}</h4>
+        <h5 class="card-text pt-2"><span class="text-success">Phone: </span>{{p.phone_number}}</h5>
+        <h5 class="card-text pt-2"><span class="text-success">Address: </span>{{p.address}}</h5>
+        <h5 class="card-text pt-2"><span class="text-success">Room No: </span>{{p.room_number}}</h5>
+        <h5 class="card-text"><span class="text-success">Date: </span>{{p.date}}</h5>
+        <a href="#" class="btn btn-danger mt-3">Back To Home</a>
+      </div>
+      {%endfor%}
+    </div>
+  </div>
+
+
+</div>
+
+{% endblock%}

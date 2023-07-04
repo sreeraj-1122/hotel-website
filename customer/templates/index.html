@@ -1,0 +1,76 @@
+{%extends 'base.html'%}
+{% block content %}
+    
+    <div class="home contaner-fluid">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static\images\hotel1.jpg" class="carousel-img d-block  " alt="...">
+                    <div class="carousel-caption d-none d-md-block ">
+
+                        <!-- <h1 class="display-3 text-white mb-4 animated slideInDown">Hotel rooms are a second home, only
+                            you get to escape.
+                        </h1> -->
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="static\images\hotel2.jpg" class="carousel-img  d-block " alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+
+                        <p>Being in a hotel is the best getaway you can ever get</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/hotel3.jpg" class="carousel-img  d-block " alt="...">
+                    <!-- <div class="carousel-caption d-none d-md-block">
+
+                        <p>Hotel rooms are second homes to famous people.</p>
+                    </div> -->
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- About start -->
+
+    <div class="about container-fluid">
+
+        <div class="left-about">
+
+            <h4 class="text-warning ">ABOUT US</h4>
+            <h1 class="">Welcome to <span class="span-head">CITY HOTEL</span> </h1>
+
+        </div>
+        <div class="right-about">
+
+
+
+        </div>
+
+
+    </div>
+
+
+    {% endblock%} 

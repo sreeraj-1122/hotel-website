@@ -1,0 +1,42 @@
+{%extends 'base.html'%}
+{% block content %}
+
+<div class="container">
+    <div class="main-head text-center ">
+
+        <h1 class="pt-4 fw-bold ">Explore Our <span class="span-head text-warning text-uppercase fw-bold">Rooms</span>
+        </h1>
+    </div>
+
+    <div class="rooms-content ">
+        {% for p in room %}
+
+        <div class="card mt-5 mx-4 my-3" style="width: 18rem; display:inline-block ; ">
+            <img class="card-img-top" src="{{p.image}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">{{p.room_name}}e</h5>
+                <p class="card-text " style="line-height: 1.5rem;">{{p.details}}</p>
+                <p class="card-text fw-bold">Rs: {{p.cost}}</p>
+                <div class="d-flex justify-content-between">
+                    <!-- <a class="btn btn-sm btn-warning rounded py-2 px-4" href="">View Detail</a> -->
+                    <a class="btn btn-sm btn-success rounded py-2 px-4" href="{% url 'booking'%}">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+
+        {%endfor%}
+
+
+
+    </div>
+</div>
+<br>
+<br>
+
+
+
+<br><br><br>
+<br>
+
+{% endblock%}

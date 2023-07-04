@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+
+ {% block content %}
+ {%load crispy_forms_tags %}
+
+<div class="container">
+    <div class="main-head text-center ">
+
+        <h1 class="pt-4 fw-bold">Booking Our <span class="span-head text-warning text-uppercase fw-bold">Rooms</span>
+        </h1>
+    </div>
+    <hr>
+
+    <div class="booking-content">
+        
+        <div class="booking-form container text-center w-75   bg-info p-3 " >
+                <form action="" method="POST" class="">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+
+
+                    <button type="submit" value="Submit" class="btn btn-warning  px-5 py-2">Submit</button>
+                </form>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock%}
